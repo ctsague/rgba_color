@@ -1,8 +1,8 @@
 (function(){
 
-var app ={
+var app = {
 
-	r :0,
+	r : 0,
 	g : 0,
 	b : 0,
 	a : 0,
@@ -21,16 +21,12 @@ var app ={
 	},
 
 	rgbTohexadecimal : function(r,g,b,a){
-		
 		var rhexa = parseInt(r, 10).toString(16);
-		console.log(rhexa);
 		var ghexa = parseInt(g, 10).toString(16);
 		var bhexa = parseInt(b, 10).toString(16);
 		var ahexa = parseInt(a, 10).toString(16);
-		
 		var valhexa = ('#' + rhexa + ghexa + bhexa + ahexa).toUpperCase();
 		$('#hexa').html(valhexa);
-
 	},
 };
 
